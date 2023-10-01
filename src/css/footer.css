@@ -1,0 +1,30 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DDD;
+  z-index: 1;
+  background-color: #181818;
+}
+
+footer a {
+  color: #DDD;
+
+}
+
+footer a:hover{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer p {
+  margin-left: 12px;
+}
+
+span{
+  font-weight: bold;
+}
