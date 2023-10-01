@@ -1,0 +1,14 @@
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: #181818;
+}
+
+.left-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  margin-left: 28px;
+}
