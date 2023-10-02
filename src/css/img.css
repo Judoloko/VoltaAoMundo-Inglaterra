@@ -1,0 +1,44 @@
+.topo-pai{
+  position: relative;
+  width: 100%;
+  height: 30rem;
+}
+
+.topo-filho{
+  position: absolute;
+  width: 100%;
+  height: 30rem;
+  z-index: -1;
+  background-size: cover;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.historia{
+   background-image: url(../assets/historia/historia.jpg);
+}
+
+.sobre{
+   background-image: url(../assets/sobre/bandeira.jpg);
+   
+}
+
+.turismo{
+   background-image: url(../assets/turismo/ponte.jpg);
+   background-position: center;
+}
+
+.gastronomia{
+   background-image: url(../assets/img-comida/comidainglesa.jpg);
+}
+
+
+.texto{
+  width: 100%;
+} 
+
+.texto h1{
+  text-align: center;
+  color: #FFFFFF;
+}
