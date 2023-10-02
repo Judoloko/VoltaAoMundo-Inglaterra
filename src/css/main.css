@@ -29,6 +29,14 @@ html{
 /* FIM HEADER */
 
 /* INICIO MAIN */
+.container h1{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.card{
+  margin-top: 2rem;
+}
 
 .content{
   position: absolute;
