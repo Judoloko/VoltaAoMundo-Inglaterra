@@ -36,5 +36,8 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
   }
 }
