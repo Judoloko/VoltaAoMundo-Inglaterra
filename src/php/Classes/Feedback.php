@@ -41,13 +41,26 @@ class Feedback
 
 	public function listar()
 	{
-		$sql = "SELECT * FROM ";
+		$sql = "SELECT nome,email,comentario,status_comentario FROM  feedback";
 
-		$conexao = new PDO('mysql:host=127.0.0.1;dbname=sis-escolar', 'root', '');
+		$conexao = new PDO('mysql:host=127.0.0.1;dbname=login-inglaterra', 'root', '');
 
 		$resultado = $conexao->query($sql);
 
-		$lista = $resultado->fetchAll();
+		$lista = $resultado->fetchALL();
+
+		return $lista;
+	}
+
+	public function listarAvaliacao()
+	{
+		$sql = "SELECT nome,email,idade,sexo,cidade,nota FROM  feedback";
+
+		$conexao = new PDO('mysql:host=127.0.0.1;dbname=login-inglaterra', 'root', '');
+
+		$resultado = $conexao->query($sql);
+
+		$lista = $resultado->fetchALL();
 
 		return $lista;
 	}
