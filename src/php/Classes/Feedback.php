@@ -41,7 +41,7 @@ class Feedback
 
 	public function listar()
 	{
-		$sql = "SELECT nome,email,comentario,status_comentario FROM  feedback";
+		$sql = "SELECT id,nome,email,comentario,status_comentario FROM  feedback";
 
 		$conexao = new PDO('mysql:host=127.0.0.1;dbname=login-inglaterra', 'root', '');
 
@@ -63,6 +63,18 @@ class Feedback
 		$lista = $resultado->fetchALL();
 
 		return $lista;
+	}
+
+	public function alterarStatus($status)
+	{
+		$sql = "UPDATE feedback
+			SET status_comentario = '" . $status . "'
+			WHERE id=" . $this->id . "
+			"
+		;
+		$conexao = new PDO('mysql:host=127.0.0.1;dbname=login-inglaterra', 'root', '');
+		$conexao->exec($sql);
+		header("Location: listar-comentario.php");
 	}
 
 
